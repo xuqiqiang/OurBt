@@ -4,7 +4,7 @@ public class NullImageException extends Exception {
 
     private static final long serialVersionUID = 1L;
 
-    // ×Ô¶¨ÒåÒì³£
+    // è‡ªå®šä¹‰å¼‚å¸¸
     public NullImageException() {
         super();
     }

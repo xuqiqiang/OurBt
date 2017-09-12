@@ -56,10 +56,10 @@ public class UITorrentTable {
     }
 
     /**
-     * ´´½¨±í¸ñµÄÁĞ
+     * åˆ›å»ºè¡¨æ ¼çš„åˆ—
      * 
      * @param childSashForm
-     *            ´°¿Ú·Ö¸îÆ÷
+     *            çª—å£åˆ†å‰²å™¨
      */
     private void createTorrentTable(SashForm childSashForm) {
         torrentTable = new Table(childSashForm, SWT.FULL_SELECTION);
@@ -67,53 +67,53 @@ public class UITorrentTable {
         torrentTable.setHeaderVisible(true);
         torrentTable.setLinesVisible(true);
         TableColumn nameColumn = new TableColumn(torrentTable, SWT.BORDER);
-        nameColumn.setText("ÎÄ¼şÃû");
+        nameColumn.setText("æ–‡ä»¶å");
         nameColumn.setWidth(150);
 
         TableColumn sizeColumn = new TableColumn(torrentTable, SWT.BORDER);
-        sizeColumn.setText("´óĞ¡");
+        sizeColumn.setText("å¤§å°");
         sizeColumn.setWidth(100);
 
         TableColumn doneColumn = new TableColumn(torrentTable, SWT.BORDER);
-        doneColumn.setText("Íê³ÉÂÊ");
+        doneColumn.setText("å®Œæˆç‡");
         doneColumn.setWidth(100);
 
         TableColumn downloadedColumn = new TableColumn(torrentTable, SWT.BORDER);
-        downloadedColumn.setText("ÒÑÏÂÔØ");
+        downloadedColumn.setText("å·²ä¸‹è½½");
         downloadedColumn.setWidth(100);
 
         TableColumn statusColumn = new TableColumn(torrentTable, SWT.BORDER);
-        statusColumn.setText("×´Ì¬");
+        statusColumn.setText("çŠ¶æ€");
         statusColumn.setWidth(80);
 
         TableColumn seedColumn = new TableColumn(torrentTable, SWT.BORDER);
-        seedColumn.setText("ÖÖ×Ó");
+        seedColumn.setText("ç§å­");
         seedColumn.setWidth(100);
 
         TableColumn peerColumn = new TableColumn(torrentTable, SWT.BORDER);
-        peerColumn.setText("ÓÃ»§");
+        peerColumn.setText("ç”¨æˆ·");
         peerColumn.setWidth(80);
 
         TableColumn downSpeedColumn = new TableColumn(torrentTable, SWT.BORDER);
-        downSpeedColumn.setText("ÏÂÔØËÙ¶È");
+        downSpeedColumn.setText("ä¸‹è½½é€Ÿåº¦");
         downSpeedColumn.setWidth(100);
 
         TableColumn upSpeedColumn = new TableColumn(torrentTable, SWT.BORDER);
-        upSpeedColumn.setText("ÉÏ´«ËÙ¶È");
+        upSpeedColumn.setText("ä¸Šä¼ é€Ÿåº¦");
         upSpeedColumn.setWidth(100);
 
         TableColumn upLoadColumn = new TableColumn(torrentTable, SWT.BORDER);
-        upLoadColumn.setText("ÒÑÉÏ´«");
+        upLoadColumn.setText("å·²ä¸Šä¼ ");
         upLoadColumn.setWidth(100);
 
         TableColumn addTimeColumn = new TableColumn(torrentTable, SWT.BORDER);
-        addTimeColumn.setText("Ìí¼ÓÊ±¼ä");
+        addTimeColumn.setText("æ·»åŠ æ—¶é—´");
         addTimeColumn.setWidth(100);
 
     }
 
     /**
-     * ¸üĞÂÆ÷£¬µ±É¾³ı»òÌí¼ÓÖÖ×ÓÊ±µ÷ÓÃÕâ¸ö·½·¨£¬Ê¹±í¸ñÖĞµÄĞÅÏ¢¼°Ê±µÃµ½¸üĞÂ
+     * æ›´æ–°å™¨ï¼Œå½“åˆ é™¤æˆ–æ·»åŠ ç§å­æ—¶è°ƒç”¨è¿™ä¸ªæ–¹æ³•ï¼Œä½¿è¡¨æ ¼ä¸­çš„ä¿¡æ¯åŠæ—¶å¾—åˆ°æ›´æ–°
      */
     @SuppressWarnings("unchecked")
     public void refresh() {
@@ -129,7 +129,7 @@ public class UITorrentTable {
             core.start();
         }
 
-        // »ñÈ¡È«¾ÖÏÂÔØÆ÷
+        // è·å–å…¨å±€ä¸‹è½½å™¨
 
         list = core.getGlobalManager().getDownloadManagers();
 
@@ -152,7 +152,7 @@ public class UITorrentTable {
     }
 
     /**
-     * ¸üĞÂ±í¸ñÊ±µ÷ÓÃÕâ¸ö·½·¨Çå³ş±í¸ñÖĞµÄËùÓĞÁĞ£¬¼°ÁĞÉÏµÄ¼àÌıÆ÷
+     * æ›´æ–°è¡¨æ ¼æ—¶è°ƒç”¨è¿™ä¸ªæ–¹æ³•æ¸…æ¥šè¡¨æ ¼ä¸­çš„æ‰€æœ‰åˆ—ï¼ŒåŠåˆ—ä¸Šçš„ç›‘å¬å™¨
      */
     private void clearItems() {
         TableItem items[] = torrentTable.getItems();
@@ -171,7 +171,7 @@ public class UITorrentTable {
     }
 
     /**
-     * ÄÚ²¿Àà£¬ÊµÏÖ¼àÌı£¬°ÑÏÂÔØµÄĞÅÏ¢¼ÓÔØµ½½çÃæÉÏ
+     * å†…éƒ¨ç±»ï¼Œå®ç°ç›‘å¬ï¼ŒæŠŠä¸‹è½½çš„ä¿¡æ¯åŠ è½½åˆ°ç•Œé¢ä¸Š
      */
     class ShowTableItem implements DownloadManagerListener,
             DownloadManagerPeerListener, DownloadManagerPieceListener {
@@ -183,7 +183,7 @@ public class UITorrentTable {
         }
 
         /**
-         * Ïò±í¸ñÖĞÔö¼ÓÒ»ĞĞ
+         * å‘è¡¨æ ¼ä¸­å¢åŠ ä¸€è¡Œ
          */
         public void addTableItem() {
 
@@ -209,7 +209,7 @@ public class UITorrentTable {
 
             long size = torrent.getSize();
 
-            // ÉèÖÃ´óĞ¡
+            // è®¾ç½®å¤§å°
             item.setText(1, String.valueOf(size < 1024 * 1024 * 1024 ? Math
                     .round((float) size / 1024 / 1024 * 100.0) / 100.0 + "M"
                     : Math.round((float) size / 1024 / 1024 / 1024 * 100.0)
@@ -217,33 +217,33 @@ public class UITorrentTable {
             item.setText(9,
                     String.valueOf(new Date(downloadManager.getCreationTime())));
 
-            // ÖÖ×ÓÊı
+            // ç§å­æ•°
             item.setText(6, "0");
 
-            // ÓÃ»§Êı
+            // ç”¨æˆ·æ•°
             item.setText(5, "0");
 
-            // Íê³ÉÂÊ
+            // å®Œæˆç‡
             item.setText(2, DisplayFormatters
                     .formatPercentFromThousands(downloadManager.getStats()
                             .getCompleted()));
 
-            // ÒÑÏÂÔØÁ¿
+            // å·²ä¸‹è½½é‡
             item.setText(3, DisplayFormatters
                     .formatByteCountToKiBEtc(downloadManager.getStats()
                             .getTotalDataBytesReceived()));
-            // ÏÂÔØËÙ¶È
+            // ä¸‹è½½é€Ÿåº¦
             item.setText(7, "0 B/s");
-            // ÉÏ´«ËÙ¶È
+            // ä¸Šä¼ é€Ÿåº¦
             item.setText(8, "0 B/s");
-            // ÒÑÉÏ´«
+            // å·²ä¸Šä¼ 
             item.setText(9, DisplayFormatters
                     .formatByteCountToKiBEtc(downloadManager.getStats()
                             .getTotalDataBytesSent()));
         }
 
         /**
-         * °ÑÕâ¸öÀà¼Óµ½DownloadManagerµÄ¼àÌıÆ÷ÖĞ
+         * æŠŠè¿™ä¸ªç±»åŠ åˆ°DownloadManagerçš„ç›‘å¬å™¨ä¸­
          */
         public void addListener() {
             downloadManager.addListener(this);
@@ -252,58 +252,58 @@ public class UITorrentTable {
         }
 
         /**
-         * DownloadManagerListenerµÄÊµÏÖ
+         * DownloadManagerListenerçš„å®ç°
          */
         public void completionChanged(DownloadManager manager, boolean completed) {
 
         }
 
         /**
-         * DownloadManagerListenerµÄÊµÏÖ
+         * DownloadManagerListenerçš„å®ç°
          */
         public void downloadComplete(DownloadManager manager) {
 
         }
 
         /**
-         * DownloadManagerListenerµÄÊµÏÖ
+         * DownloadManagerListenerçš„å®ç°
          */
         public void filePriorityChanged(DownloadManager download,
                 DiskManagerFileInfo file) {
         }
 
         /**
-         * DownloadManagerListenerµÄÊµÏÖ
+         * DownloadManagerListenerçš„å®ç°
          */
         public void positionChanged(DownloadManager download, int oldPosition,
                 int newPosition) {
         }
 
         /**
-         * DownloadManagerListenerµÄÊµÏÖ,×´Ì¬¸Ä±äµÄ¼àÌı
+         * DownloadManagerListenerçš„å®ç°,çŠ¶æ€æ”¹å˜çš„ç›‘å¬
          */
         public void stateChanged(DownloadManager manager, int state) {
             downloadManager = manager;
             Utils.execSWTThread(new AERunnable() {
                 public void runSupport() {
                     if (downloadManager.getState() == DownloadManager.STATE_DOWNLOADING) {
-                        item.setText(4, "ÕıÔÚÏÂÔØ");
+                        item.setText(4, "æ­£åœ¨ä¸‹è½½");
                     } else if (downloadManager.getState() == DownloadManager.STATE_FINISHING) {
-                        item.setText(4, "Íê³É");
+                        item.setText(4, "å®Œæˆ");
                     } else if (downloadManager.getState() == DownloadManager.STATE_SEEDING) {
-                        item.setText(4, "ÖÖ×Ó");
+                        item.setText(4, "ç§å­");
                     } else if (downloadManager.getState() == DownloadManager.STATE_STOPPED) {
-                        item.setText(4, "Í£Ö¹");
+                        item.setText(4, "åœæ­¢");
                     } else if (downloadManager.getState() == DownloadManager.STATE_STOPPING) {
-                        item.setText(4, "ÔİÍ£");
+                        item.setText(4, "æš‚åœ");
                     } else if (downloadManager.getState() == DownloadManager.STATE_QUEUED) {
-                        item.setText(4, "¶ÓÁĞ");
+                        item.setText(4, "é˜Ÿåˆ—");
                     } else if (downloadManager.getState() == DownloadManager.STATE_WAITING) {
-                        item.setText(4, "µÈ´ı");
+                        item.setText(4, "ç­‰å¾…");
                     } else if (downloadManager.getState() == DownloadManager.STATE_READY) {
-                        item.setText(4, "×¼±¸");
+                        item.setText(4, "å‡†å¤‡");
                     } else if (downloadManager.getState() == DownloadManager.STATE_CHECKING) {
-                        item.setText(4, "¼ì²é");
+                        item.setText(4, "æ£€æŸ¥");
                     } else {
                         item.setText(4,
                                 String.valueOf(downloadManager.getState()));
@@ -314,10 +314,10 @@ public class UITorrentTable {
         }
 
         /**
-         * DownloadManagerPeerListener¼àÌıµÄÊµÏÖ£¬peerÔö¼ÓÊ±µÄ¼àÌı
+         * DownloadManagerPeerListenerç›‘å¬çš„å®ç°ï¼Œpeerå¢åŠ æ—¶çš„ç›‘å¬
          */
         public void peerAdded(PEPeer peer) {
-            // ÒªºÍSWTµÄÏß³ÌÍ¬²½
+            // è¦å’ŒSWTçš„çº¿ç¨‹åŒæ­¥
             Utils.execSWTThread(new AERunnable() {
                 public void runSupport() {
                     long lTotalPeers = 0;
@@ -352,10 +352,10 @@ public class UITorrentTable {
                         tmp += ")";
                     }
 
-                    // ½ÚµãÊı
+                    // èŠ‚ç‚¹æ•°
                     item.setText(6, String.valueOf(lTotalSeeds));
 
-                    // ÖÖ×ÓÊı
+                    // ç§å­æ•°
                     item.setText(5, String.valueOf(lConnectedSeeds));
 
                 }
@@ -363,31 +363,31 @@ public class UITorrentTable {
         }
 
         /**
-         * DownloadManagerListenerµÄÊµÏÖ
+         * DownloadManagerListenerçš„å®ç°
          */
         public void peerManagerAdded(PEPeerManager manager) {
 
         }
 
         /**
-         * DownloadManagerListenerµÄÊµÏÖ
+         * DownloadManagerListenerçš„å®ç°
          */
         public void peerManagerRemoved(PEPeerManager manager) {
 
         }
 
         /**
-         * DownloadManagerListenerµÄÊµÏÖ
+         * DownloadManagerListenerçš„å®ç°
          */
         public void peerManagerWillBeAdded(PEPeerManager manager) {
 
         }
 
         /**
-         * DownloadManagerListenerµÄÊµÏÖ
+         * DownloadManagerListenerçš„å®ç°
          */
         public void peerRemoved(PEPeer peer) {
-            // ÒªºÍSWTµÄÏß³ÌÍ¬²½
+            // è¦å’ŒSWTçš„çº¿ç¨‹åŒæ­¥
             Utils.execSWTThread(new AERunnable() {
                 public void runSupport() {
                     long lTotalPeers = 0;
@@ -422,10 +422,10 @@ public class UITorrentTable {
                         tmp += ")";
                     }
 
-                    // ½ÚµãÊı
+                    // èŠ‚ç‚¹æ•°
                     item.setText(6, String.valueOf(lTotalSeeds));
 
-                    // ÖÖ×ÓÊı
+                    // ç§å­æ•°
                     item.setText(5, String.valueOf(lConnectedSeeds));
 
                 }
@@ -434,28 +434,28 @@ public class UITorrentTable {
         }
 
         /**
-         * DownloadManagerPieceListenerµÄÊµÏÖ£¬Ôö¼Ó¿éÊ±µÄ¼àÌı£¬°ÑÍê³ÉÂÊ£¬ÏÂÔØËÙ¶È£¬ÉÏ´«ËÙ¶È ·´Ó³ÔÚ½çÃæÉÏ
+         * DownloadManagerPieceListenerçš„å®ç°ï¼Œå¢åŠ å—æ—¶çš„ç›‘å¬ï¼ŒæŠŠå®Œæˆç‡ï¼Œä¸‹è½½é€Ÿåº¦ï¼Œä¸Šä¼ é€Ÿåº¦ åæ˜ åœ¨ç•Œé¢ä¸Š
          */
         public void pieceAdded(PEPiece piece) {
             Utils.execSWTThread(new AERunnable() {
                 public void runSupport() {
-                    // Íê³ÉÂÊ
+                    // å®Œæˆç‡
                     item.setText(2, DisplayFormatters
                             .formatPercentFromThousands(downloadManager
                                     .getStats().getCompleted()));
-                    // ÒÑÏÂÔØÁ¿
+                    // å·²ä¸‹è½½é‡
                     item.setText(3, DisplayFormatters
                             .formatByteCountToKiBEtc(downloadManager.getStats()
                                     .getTotalDataBytesReceived()));
-                    // ÏÂÔØËÙ¶È
+                    // ä¸‹è½½é€Ÿåº¦
                     item.setText(7, DisplayFormatters
                             .formatByteCountToKiBEtcPerSec(downloadManager
                                     .getStats().getDataReceiveRate()));
-                    // ÉÏ´«ËÙ¶È
+                    // ä¸Šä¼ é€Ÿåº¦
                     item.setText(8, DisplayFormatters
                             .formatByteCountToKiBEtcPerSec(downloadManager
                                     .getStats().getDataSendRate()));
-                    // ÒÑÉÏ´«
+                    // å·²ä¸Šä¼ 
                     item.setText(9, DisplayFormatters
                             .formatByteCountToKiBEtc(downloadManager.getStats()
                                     .getTotalDataBytesSent()));
@@ -465,7 +465,7 @@ public class UITorrentTable {
         }
 
         /**
-         * DownloadManagerPieceListenerµÄÊµÏÖ
+         * DownloadManagerPieceListenerçš„å®ç°
          */
         public void pieceRemoved(PEPiece piece) {
 

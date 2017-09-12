@@ -3,7 +3,7 @@ package com.bjtu.ourbt.ui.listener;
 import org.eclipse.swt.widgets.Shell;
 
 /**
- * ¹¤¾ßÀ¸¼àÌıÆ÷£¬¼Ì³ĞBaseListener
+ * å·¥å…·æ ç›‘å¬å™¨ï¼Œç»§æ‰¿BaseListener
  */
 public class ToolBarListener extends BaseListener {
 

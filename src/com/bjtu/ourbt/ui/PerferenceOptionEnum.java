@@ -22,7 +22,7 @@ public enum PerferenceOptionEnum {
     /**
 	 * 
 	 */
-    GENERAL("³£¹æ") {
+    GENERAL("å¸¸è§„") {
         private Composite composite;
         private Group languageGroup;
         private Group integration;
@@ -56,7 +56,7 @@ public enum PerferenceOptionEnum {
             label.setBounds(5, 15, 80, 20);
             Combo combo = new Combo(languageGroup, SWT.NONE);
             combo.add("English");
-            combo.add("¼òÌåÖĞÎÄ");
+            combo.add("ç®€ä½“ä¸­æ–‡");
             combo.setBounds(150, 15, 250, 20);
         }
 
@@ -173,7 +173,7 @@ public enum PerferenceOptionEnum {
     /**
 	 * 
 	 */
-    UISETTING("½çÃæ") {
+    UISETTING("ç•Œé¢") {
         private Composite composite;
         private Label label;
         private Group displayGroup;
@@ -366,7 +366,7 @@ public enum PerferenceOptionEnum {
     /**
 	 * 
 	 */
-    DIRECTORIES("Ä¿Â¼") {
+    DIRECTORIES("ç›®å½•") {
         private Composite composite;
         private Label label;
         private Group locationFileGroup;
@@ -574,7 +574,7 @@ public enum PerferenceOptionEnum {
     /**
 	 * 
 	 */
-    CONNECTIONS("Á¬½Ó") {
+    CONNECTIONS("è¿æ¥") {
         private Composite composite;
         private Label label;
         private Group portGroup;
@@ -786,7 +786,7 @@ public enum PerferenceOptionEnum {
     /**
 	 * 
 	 */
-    BANDWIDTH("´ø¿í") {
+    BANDWIDTH("å¸¦å®½") {
         private Composite composite;
         private Label label;
         private Group updateLimitGroup;
@@ -840,7 +840,7 @@ public enum PerferenceOptionEnum {
                 public void widgetSelected(SelectionEvent e) {
                     text1.setEnabled(check1.getSelection());
                     check2.setEnabled(check1.getSelection());
-                    // ÍêÉÆ¼àÌı£¬Ã»´ïµ½Ô¤ÆÚĞ§¹û
+                    // å®Œå–„ç›‘å¬ï¼Œæ²¡è¾¾åˆ°é¢„æœŸæ•ˆæœ
                 }
 
             });

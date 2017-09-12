@@ -13,7 +13,7 @@ import com.bjtu.ourbt.util.ImageLoader;
 import com.bjtu.ourbt.util.NullImageException;
 
 /**
- * ¹ØÓÚ¶Ô»°¿ò
+ * å…³äºå¯¹è¯æ¡†
  */
 public class AboutDialog extends Dialog {
     private Shell shell;
@@ -52,7 +52,7 @@ public class AboutDialog extends Dialog {
         image.setBounds(0, 0, 300, 200);
 
         Label label2 = new Label(shell, SWT.NONE);
-        label2.setText("* SnailStudio\n\n" + "* ±±¾©½»Í¨´óÑ§\n\n"
+        label2.setText("* SnailStudio\n\n" + "* åŒ—äº¬äº¤é€šå¤§å­¦\n\n"
                 + "* https://xuqiqiang.github.io/");
         label2.setBounds(10, 220, 220, 100);
 

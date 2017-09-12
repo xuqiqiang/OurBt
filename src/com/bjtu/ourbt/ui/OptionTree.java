@@ -13,7 +13,7 @@ import org.eclipse.swt.widgets.TreeItem;
 import com.bjtu.ourbt.util.UICharacter;
 
 /**
- * ÉèÖÃÊôĞÔÖĞµÄÑ¡ÏîÀà±í
+ * è®¾ç½®å±æ€§ä¸­çš„é€‰é¡¹ç±»è¡¨
  */
 public class OptionTree extends Dialog {
     private SashForm sashForm;
@@ -100,7 +100,7 @@ public class OptionTree extends Dialog {
     }
 
     /**
-     * ÄÚ²¿¼àÌıÆ÷£¬¸ù¾İÑ¡ÔñµÄÑ¡ÏîÏÔÊ¾³öÑ¡ÏîµÄĞÅÏ¢
+     * å†…éƒ¨ç›‘å¬å™¨ï¼Œæ ¹æ®é€‰æ‹©çš„é€‰é¡¹æ˜¾ç¤ºå‡ºé€‰é¡¹çš„ä¿¡æ¯
      */
     private final class SelectionListener implements Listener {
 
@@ -109,7 +109,7 @@ public class OptionTree extends Dialog {
             TreeItem treeItem[] = tree.getSelection();
             selectItemName = treeItem[0].getText();
 
-            // ±éÀúÃ¶¾ÙÀà£¬ÕÒµ½Æ¥ÅäµÄÏî
+            // éå†æšä¸¾ç±»ï¼Œæ‰¾åˆ°åŒ¹é…çš„é¡¹
             for (PerferenceOptionEnum option : PerferenceOptionEnum.values()) {
                 if (option.getOptionName().equals(selectItemName)) {
                     if (!option.isExist()) {
@@ -121,7 +121,7 @@ public class OptionTree extends Dialog {
                     }
                 }
             }
-            composite.layout(); // ÕûÁË°ëÌì²ÅÏëµ½ÊÇÕâÌõÓï¾ä£¬ÉÙÁËÕâ¾ä£¬²»ÄÜÏÔÊ¾±ä»¯ºóµÄÃæ°å
+            composite.layout(); // æ•´äº†åŠå¤©æ‰æƒ³åˆ°æ˜¯è¿™æ¡è¯­å¥ï¼Œå°‘äº†è¿™å¥ï¼Œä¸èƒ½æ˜¾ç¤ºå˜åŒ–åçš„é¢æ¿
         }
     }
 

@@ -10,7 +10,7 @@ import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Shell;
 
 /**
- * Ñ¡Ôñ¼àÌıÆ÷
+ * é€‰æ‹©ç›‘å¬å™¨
  */
 public class SelectionButtonListener implements Listener {
     private Shell shell;
@@ -27,31 +27,31 @@ public class SelectionButtonListener implements Listener {
 
     public void handleEvent(Event event) {
 
-        // ÉèÖÃ¶Ô»°¿òµÄÈ·¶¨°´Å¥¼àÌıÊÂ¼ş
+        // è®¾ç½®å¯¹è¯æ¡†çš„ç¡®å®šæŒ‰é’®ç›‘å¬äº‹ä»¶
         if (((Button) event.widget).getText().equals("OK")) {
 
         } else
 
-        // ÉèÖÃ¶Ô»°¿òµÄ¹Ø±Õ°´Å¥ÊÂ¼ş
+        // è®¾ç½®å¯¹è¯æ¡†çš„å…³é—­æŒ‰é’®äº‹ä»¶
         if (((Button) event.widget).getText().equals("Cancel")
-                || ((Button) event.widget).getText().equals("È¡Ïû")) {
+                || ((Button) event.widget).getText().equals("å–æ¶ˆ")) {
             shell.close();
         } else
 
-        // ÉèÖÃ¶Ô»°¿òµÄÓ¦ÓÃ°´Å¥ÊÂ¼ş
+        // è®¾ç½®å¯¹è¯æ¡†çš„åº”ç”¨æŒ‰é’®äº‹ä»¶
         if (((Button) event.widget).getText().equals("Apply")) {
 
         } else
 
-        if (((Button) event.widget).getText().equals("Ìí¼ÓÎÄ¼ş")) {
+        if (((Button) event.widget).getText().equals("æ·»åŠ æ–‡ä»¶")) {
             addFile();
-        } else if (((Button) event.widget).getText().equals("Ìí¼ÓÄ¿Â¼")) {
+        } else if (((Button) event.widget).getText().equals("æ·»åŠ ç›®å½•")) {
             addDirectory();
         }
     }
 
     /**
-     * Ôö¼ÓÎÄ¼ş
+     * å¢åŠ æ–‡ä»¶
      */
     private void addFile() {
         FileDialog fileDialog = new FileDialog(shell, SWT.OPEN | SWT.MULTI);
@@ -69,7 +69,7 @@ public class SelectionButtonListener implements Listener {
     }
 
     /**
-     * Ôö¼ÓÄ¿Â¼
+     * å¢åŠ ç›®å½•
      */
     private void addDirectory() {
         DirectoryDialog directoryDialog = new DirectoryDialog(shell, SWT.NONE);

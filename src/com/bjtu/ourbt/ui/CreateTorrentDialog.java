@@ -27,7 +27,7 @@ import org.gudy.azureus2.core3.torrent.TOTorrentFactory;
 import com.bjtu.ourbt.ui.listener.SelectionButtonListener;
 
 /**
- * ´´½¨ÖÖ×Ó¶Ô»°¿ò
+ * åˆ›å»ºç§å­å¯¹è¯æ¡†
  */
 public class CreateTorrentDialog extends Dialog {
     Shell shell;
@@ -86,7 +86,7 @@ public class CreateTorrentDialog extends Dialog {
         shell = new Shell(getParent(), SWT.DIALOG_TRIM | SWT.APPLICATION_MODAL);
         shell.setSize(320, 450);
         shell.setLocation(450, 180);
-        shell.setText("´´½¨Torrent");
+        shell.setText("åˆ›å»ºTorrent");
         RowLayout rowLayout = new RowLayout(SWT.VERTICAL);
         rowLayout.marginWidth = 10;
         rowLayout.marginHeight = 10;
@@ -102,25 +102,25 @@ public class CreateTorrentDialog extends Dialog {
         selectGroup = new Group(shell, SWT.SHADOW_ETCHED_IN);
         RowData selectGroupData = new RowData(280, 95);
         selectGroup.setLayoutData(selectGroupData);
-        selectGroup.setText("Ñ¡Ôñ×ÊÔ´");
+        selectGroup.setText("é€‰æ‹©èµ„æº");
 
         addFileCombo = new Combo(selectGroup, SWT.NONE);
         addFileCombo.setBounds(10, 15, 270, 20);
 
         addFileButton = new Button(selectGroup, SWT.NONE);
-        addFileButton.setText("Ìí¼ÓÎÄ¼ş");
+        addFileButton.setText("æ·»åŠ æ–‡ä»¶");
         addFileButton.setBounds(100, 40, 70, 25);
         addFileButton.addListener(SWT.Selection, new SelectionButtonListener(
                 shell, addFileCombo));
 
         addDirectoryButton = new Button(selectGroup, SWT.NONE);
-        addDirectoryButton.setText("Ìí¼ÓÄ¿Â¼");
+        addDirectoryButton.setText("æ·»åŠ ç›®å½•");
         addDirectoryButton.setBounds(180, 40, 100, 25);
         addDirectoryButton.addListener(SWT.Selection,
                 new SelectionButtonListener(shell, addFileCombo));
 
         skipFileLabel = new Label(selectGroup, SWT.NONE);
-        skipFileLabel.setText("ºöÂÔÎÄ¼ş");
+        skipFileLabel.setText("å¿½ç•¥æ–‡ä»¶");
         skipFileLabel.setBounds(10, 75, 65, 20);
 
         text = new Text(selectGroup, SWT.BORDER);
@@ -131,7 +131,7 @@ public class CreateTorrentDialog extends Dialog {
         torrentProGroup = new Group(shell, SWT.SHADOW_ETCHED_IN);
         RowData torrentProData = new RowData(280, 170);
         torrentProGroup.setLayoutData(torrentProData);
-        torrentProGroup.setText("TorrentÊôĞÔ");
+        torrentProGroup.setText("Torrentå±æ€§");
         trackLabel = new Label(torrentProGroup, SWT.NONE);
         trackLabel.setText("Tracks:");
         trackLabel.setBounds(10, 15, 50, 20);
@@ -140,19 +140,19 @@ public class CreateTorrentDialog extends Dialog {
         trackText.setBounds(65, 15, 210, 50);
 
         webSeedLabel = new Label(torrentProGroup, SWT.NONE);
-        webSeedLabel.setText("ÍøÒ³ÖÖ×Ó:");
+        webSeedLabel.setText("ç½‘é¡µç§å­:");
         webSeedLabel.setBounds(10, 70, 50, 20);
         webSeedText = new Text(torrentProGroup, SWT.BORDER | SWT.LEFT);
         webSeedText.setBounds(65, 70, 210, 50);
 
         commentLabel = new Label(torrentProGroup, SWT.NONE);
-        commentLabel.setText("×¢ÊÍ:");
+        commentLabel.setText("æ³¨é‡Š:");
         commentLabel.setBounds(10, 125, 50, 20);
         commentText = new Text(torrentProGroup, SWT.BORDER | SWT.LEFT);
         commentText.setBounds(65, 125, 210, 20);
 
         pieceSizeLabel = new Label(torrentProGroup, SWT.NONE);
-        pieceSizeLabel.setText("¿é´óĞ¡:");
+        pieceSizeLabel.setText("å—å¤§å°:");
         pieceSizeLabel.setBounds(10, 150, 65, 20);
         pieceSizeCombo = new Combo(torrentProGroup, SWT.READ_ONLY);
         pieceSizeCombo = addComboValue(pieceSizeCombo);
@@ -163,13 +163,13 @@ public class CreateTorrentDialog extends Dialog {
         otherGroup = new Group(shell, SWT.SHADOW_ETCHED_IN);
         RowData otherGroupData = new RowData(280, 30);
         otherGroup.setLayoutData(otherGroupData);
-        otherGroup.setText("ÆäËü");
+        otherGroup.setText("å…¶å®ƒ");
         startCheck = new Button(otherGroup, SWT.CHECK);
-        startCheck.setText("¿ªÊ¼×öÖÖ");
+        startCheck.setText("å¼€å§‹åšç§");
         startCheck.setBounds(10, 15, 100, 20);
 
         privateTorrentCheck = new Button(otherGroup, SWT.CHECK);
-        privateTorrentCheck.setText("Ë½ÓĞÖÖ×Ó");
+        privateTorrentCheck.setText("ç§æœ‰ç§å­");
         privateTorrentCheck.setBounds(140, 15, 100, 20);
 
     }
@@ -179,19 +179,19 @@ public class CreateTorrentDialog extends Dialog {
         RowData buttonData = new RowData(280, 30);
         composite.setLayoutData(buttonData);
         create = new Button(composite, SWT.PUSH);
-        create.setText("´´½¨²¢±£´æ");
+        create.setText("åˆ›å»ºå¹¶ä¿å­˜");
         create.setBounds(30, 0, 100, 20);
         create.addSelectionListener(new CreatedListener());
 
         cancel = new Button(composite, SWT.PUSH);
-        cancel.setText("È¡Ïû");
+        cancel.setText("å–æ¶ˆ");
         cancel.setBounds(150, 0, 80, 20);
         cancel.addListener(SWT.Selection, new SelectionButtonListener(shell));
     }
 
     private Combo addComboValue(Combo combo) {
         combo.add("auto detect");
-        combo.setData("auto detect", 128 * 1024);// Ä¬ÈÏµÄ¿é´óĞ¡128K
+        combo.setData("auto detect", 128 * 1024);// é»˜è®¤çš„å—å¤§å°128K
         combo.add("32kb");
         combo.setData("32kb", 32 * 1024);
         combo.add("64kb");
@@ -223,13 +223,13 @@ public class CreateTorrentDialog extends Dialog {
             TOTorrent t;
             try {
                 FileDialog fileDialog = new FileDialog(shell, SWT.SAVE);
-                fileDialog.setText("±£´æÖÖ×ÓÎÄ¼ş");
+                fileDialog.setText("ä¿å­˜ç§å­æ–‡ä»¶");
                 fileDialog
                         .setFilterNames(new String[] { "Torrents(*.torrent)" });
                 fileDialog.setFilterExtensions(new String[] { "*.torrent" });
                 fileDialog.open();
 
-                // »ñÈ¡²ÎÊıÉú³ÉtorrentÎÄ¼ş
+                // è·å–å‚æ•°ç”Ÿæˆtorrentæ–‡ä»¶
 
                 c = TOTorrentFactory.createFromFileOrDirWithFixedPieceLength(
                         new File(addFileCombo.getText()),
@@ -240,7 +240,7 @@ public class CreateTorrentDialog extends Dialog {
                 String path = fileDialog.getFilterPath() + "\\"
                         + fileDialog.getFileName();
 
-                // B±àÂëtorrentÎÄ¼ş
+                // Bç¼–ç torrentæ–‡ä»¶
                 t.serialiseToBEncodedFile(new File(path));
             } catch (NumberFormatException e1) {
                 e1.printStackTrace();

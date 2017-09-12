@@ -1,56 +1,56 @@
 package com.bjtu.ourbt.util;
 
 /**
- * ¹¤¾ßÀà£¬Ìá¹©ÁË×Ö·û´®¶¨Òå
+ * å·¥å…·ç±»ï¼Œæä¾›äº†å­—ç¬¦ä¸²å®šä¹‰
  */
 public class UICharacter {
 
-    public static String GENERAL = "³£¹æ";
+    public static String GENERAL = "å¸¸è§„";
 
-    public static String UISETTING = "½çÃæ";
+    public static String UISETTING = "ç•Œé¢";
 
-    public static String DIRECTORIES = "Ä¿Â¼";
+    public static String DIRECTORIES = "ç›®å½•";
 
-    public static String CONNECTIONS = "Á¬½Ó";
+    public static String CONNECTIONS = "è¿æ¥";
 
-    public static String BANDWIDTH = "´ø¿í";
+    public static String BANDWIDTH = "å¸¦å®½";
 
     public static String BITTORRENT = "BitTorrent";
 
-    public static String QUEUEING = "¶ÓÁĞ";
+    public static String QUEUEING = "é˜Ÿåˆ—";
 
-    public static String SCHEDULE = "ÈÎÎñ";
+    public static String SCHEDULE = "ä»»åŠ¡";
 
-    public static String WEB_UI = "Ô¶³Ì";
+    public static String WEB_UI = "è¿œç¨‹";
 
-    public static String ADVANCED = "¸ß¼¶";
+    public static String ADVANCED = "é«˜çº§";
 
-    public static String UIEXTRA = "À©Õ¹";
+    public static String UIEXTRA = "æ‰©å±•";
 
-    public static String DISKCACHE = "»º´æ";
+    public static String DISKCACHE = "ç¼“å­˜";
 
-    public static final String ADD_TORRENT_DEFAULT = "Ìí¼Ó  Torrent...\tCtrl+A";
+    public static final String ADD_TORRENT_DEFAULT = "æ·»åŠ   Torrent...\tCtrl+A";
 
-    public static final String ADD_TORRENT_NOT_DEFAULT = "Ìí¼Ó Torrent(·ÇÄ¬ÈÏÎ»ÖÃ)...\tCtrl+D";
+    public static final String ADD_TORRENT_NOT_DEFAULT = "æ·»åŠ  Torrent(éé»˜è®¤ä½ç½®)...\tCtrl+D";
 
-    public static final String ADD_TORRENT_URL = "Ìí¼Ó Torrent(´ÓURL)...\tCtrl+U";
+    public static final String ADD_TORRENT_URL = "æ·»åŠ  Torrent(ä»URL)...\tCtrl+U";
 
-    public static final String CREATE_NEW_TORRENT = "´´½¨ĞÂµÄ  Torrent...\tCtrl+N";
+    public static final String CREATE_NEW_TORRENT = "åˆ›å»ºæ–°çš„  Torrent...\tCtrl+N";
 
-    public static final String EXIT = "ÍË³ö...\tCtrl+E";
+    public static final String EXIT = "é€€å‡º...\tCtrl+E";
 
-    public static final String SHOW_TOOL_BAR = "ÏÔÊ¾¹¤¾ßÀ¸\tCtrl+T";
+    public static final String SHOW_TOOL_BAR = "æ˜¾ç¤ºå·¥å…·æ \tCtrl+T";
 
-    public static final String SHOW_DETAIL_INFO = "ÏÔÊ¾ÏêÏ¸ĞÅÏ¢\tCtrl+D";
+    public static final String SHOW_DETAIL_INFO = "æ˜¾ç¤ºè¯¦ç»†ä¿¡æ¯\tCtrl+D";
 
-    public static final String SHOW_STATUS_BAR = "ÏÔÊ¾×´Ì¬À¸\tCtrl+S";
+    public static final String SHOW_STATUS_BAR = "æ˜¾ç¤ºçŠ¶æ€æ \tCtrl+S";
 
-    public static final String SHOW_CATEGORY_LIST = "ÏÔÊ¾Àà±ğÁĞ±í\tCtrl+C";
+    public static final String SHOW_CATEGORY_LIST = "æ˜¾ç¤ºç±»åˆ«åˆ—è¡¨\tCtrl+C";
 
-    public static final String PERFERENCE = "ÊôĞÔ\tCtrl+P";
+    public static final String PERFERENCE = "å±æ€§\tCtrl+P";
 
-    public static final String HELP = "°ïÖú\tCtrl+H";
+    public static final String HELP = "å¸®åŠ©\tCtrl+H";
 
-    public static final String ABOUT = "¹ØÓÚ\tCtrl+A";
+    public static final String ABOUT = "å…³äº\tCtrl+A";
 
 }

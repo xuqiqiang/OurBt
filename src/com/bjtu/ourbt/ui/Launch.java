@@ -3,7 +3,7 @@ package com.bjtu.ourbt.ui;
 import com.bjtu.ourbt.ui.Launch;
 
 /**
- * ³ÌĞòÆô¶¯Àà
+ * ç¨‹åºå¯åŠ¨ç±»
  */
 public class Launch {
 
@@ -13,7 +13,7 @@ public class Launch {
     }
 
     /**
-     * ³ÌĞòÈë¿Ú
+     * ç¨‹åºå…¥å£
      */
     public static void main(String[] args) {
         try {

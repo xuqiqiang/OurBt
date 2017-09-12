@@ -20,7 +20,7 @@ import com.bjtu.ourbt.util.ImageLoader;
 import com.bjtu.ourbt.util.NullImageException;
 
 /**
- * ÏµÍ³ÍĞÅÌÀà£¬ÊµÏÖÍĞÅÌ
+ * ç³»ç»Ÿæ‰˜ç›˜ç±»ï¼Œå®ç°æ‰˜ç›˜
  */
 public class UITray {
     private Shell shell;
@@ -59,8 +59,8 @@ public class UITray {
                     boolean showFlag = shell.isVisible();
                     shell.setVisible(showFlag);
                     showMenu.setText(showFlag ? "&Show" : "&Hide");
-                    tip.setText("QuickBtÍĞÅÌ");
-                    tip.setMessage("ÓÒ¼üµ¥»÷");
+                    tip.setText("QuickBtæ‰˜ç›˜");
+                    tip.setMessage("å³é”®å•å‡»");
                     tip.setVisible(true);
                 }
             });
@@ -110,14 +110,14 @@ public class UITray {
 
     /**
      * 
-     * @return ·µ»ØÍĞÅÌ¶ÔÏó
+     * @return è¿”å›æ‰˜ç›˜å¯¹è±¡
      */
     public TrayItem getTrayItem() {
         return this.trayItem;
     }
 
     /**
-     * ÄÚ²¿·½·¨ ·µ»ØÍĞÅÌÏÔÊ¾µÄĞÅÏ¢
+     * å†…éƒ¨æ–¹æ³• è¿”å›æ‰˜ç›˜æ˜¾ç¤ºçš„ä¿¡æ¯
      * 
      * @return
      */

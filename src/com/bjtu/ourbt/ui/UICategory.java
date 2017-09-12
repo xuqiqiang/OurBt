@@ -10,7 +10,7 @@ import com.bjtu.ourbt.util.ImageLoader;
 import com.bjtu.ourbt.util.NullImageException;
 
 /**
- * ƒø¬º ˜
+ * ÁõÆÂΩïÊ†ë
  */
 public class UICategory {
     private SashForm sashForm;
@@ -28,7 +28,7 @@ public class UICategory {
         Tree tree = new Tree(sashForm, SWT.BORDER | SWT.SINGLE);
         tree.setLinesVisible(false);
         TreeItem allItem = new TreeItem(tree, SWT.BORDER);
-        allItem.setText("»´≤ø");
+        allItem.setText("ÂÖ®ÈÉ®");
         try {
             allItem.setImage(new Image(sashForm.getDisplay(), ImageLoader
                     .addImage("image/status_00x00.bmp")));
@@ -37,7 +37,7 @@ public class UICategory {
         }
 
         TreeItem downloadItem = new TreeItem(tree, SWT.BORDER);
-        downloadItem.setText("œ¬‘ÿ");
+        downloadItem.setText("‰∏ãËΩΩ");
         try {
             downloadItem.setImage(new Image(sashForm.getDisplay(), ImageLoader
                     .addImage("image/status_00x01.bmp")));
@@ -46,7 +46,7 @@ public class UICategory {
         }
 
         TreeItem completeItem = new TreeItem(tree, SWT.BORDER);
-        completeItem.setText("ÕÍ≥…");
+        completeItem.setText("ÂÆåÊàê");
         try {
             completeItem.setImage(new Image(sashForm.getDisplay(), ImageLoader
                     .addImage("image/status_00x02.bmp")));
@@ -55,7 +55,7 @@ public class UICategory {
         }
 
         TreeItem activeItem = new TreeItem(tree, SWT.BORDER);
-        activeItem.setText("ªÓ∂Ø");
+        activeItem.setText("Ê¥ªÂä®");
         try {
             activeItem.setImage(new Image(sashForm.getDisplay(), ImageLoader
                     .addImage("image/status_00x03.bmp")));
@@ -64,7 +64,7 @@ public class UICategory {
         }
 
         TreeItem inActiveItem = new TreeItem(tree, SWT.BORDER);
-        inActiveItem.setText("Õ£÷π");
+        inActiveItem.setText("ÂÅúÊ≠¢");
         try {
             inActiveItem.setImage(new Image(sashForm.getDisplay(), ImageLoader
                     .addImage("image/status_00x04.bmp")));

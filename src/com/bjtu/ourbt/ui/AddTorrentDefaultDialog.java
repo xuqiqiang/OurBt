@@ -25,7 +25,7 @@ import com.aelitis.azureus.core.vuzefile.VuzeFileHandler;
 import com.aelitis.azureus.ui.swt.UIFunctionsSWT;
 
 /**
- * ´ÓÄ¬ÈÏÎ»ÖÃÌí¼ÓÖÖ×Ó
+ * ä»é»˜è®¤ä½ç½®æ·»åŠ ç§å­
  */
 public class AddTorrentDefaultDialog {
     private Shell shell;
@@ -39,7 +39,7 @@ public class AddTorrentDefaultDialog {
             public void runSupport() {
                 FileDialog fileDialog = new FileDialog(shell, SWT.OPEN
                         | SWT.MULTI);
-                fileDialog.setText("´ò¿ªÖÖ×ÓÎÄ¼ş");
+                fileDialog.setText("æ‰“å¼€ç§å­æ–‡ä»¶");
                 fileDialog.setFilterNames(new String[] { "Torrents(*.torrent)",
                         "All(*.*)" });
                 fileDialog.setFilterExtensions(new String[] { "*.torrent",

@@ -14,7 +14,7 @@ import com.bjtu.ourbt.ui.UIToolBar;
 import com.bjtu.ourbt.util.UICharacter;
 
 /**
- * »ù±¾¼àÌıÆ÷£¬½çÃæµÄ¼àÌı¶¼ÔÚÕâÊµÏÖ£¬ÊÇ¸¸Àà£¬°Ñ½çÃæÖĞ¹²ÓÃµÄ¼àÌı·ÅÔÚÕâ
+ * åŸºæœ¬ç›‘å¬å™¨ï¼Œç•Œé¢çš„ç›‘å¬éƒ½åœ¨è¿™å®ç°ï¼Œæ˜¯çˆ¶ç±»ï¼ŒæŠŠç•Œé¢ä¸­å…±ç”¨çš„ç›‘å¬æ”¾åœ¨è¿™
  */
 public class BaseListener implements SelectionListener {
     public Shell shell;
@@ -41,24 +41,24 @@ public class BaseListener implements SelectionListener {
             text = ((MenuItem) e.getSource()).getText();
         }
 
-        // Ôö¼ÓÖÖ×Ó°´Å¥¼àÌı
+        // å¢åŠ ç§å­æŒ‰é’®ç›‘å¬
         if (text.equals(UIToolBar.ADD_TORRENT_NAEM)
                 || text.equals(UICharacter.ADD_TORRENT_DEFAULT)) {
             AddTorrentDefaultDialog addDefaultDialog = new AddTorrentDefaultDialog(
                     shell);
             addDefaultDialog.open();
 
-            // ´ÓURL´´½¨ÖÖ×Ó¼àÌı
+            // ä»URLåˆ›å»ºç§å­ç›‘å¬
         } else if (text.equals(UIToolBar.ADD_TORRENT_URL_NAEM)
                 || text.equals(UICharacter.ADD_TORRENT_URL)) {
 
-            // ´´½¨ÖÖ×Ó¼àÌı
+            // åˆ›å»ºç§å­ç›‘å¬
         } else if (text.equals(UIToolBar.CREATE_TORRENT_NAEM)
                 || text.equals(UICharacter.CREATE_NEW_TORRENT)) {
             CreateTorrentDialog createTorrentDialog = new CreateTorrentDialog(
                     shell);
             createTorrentDialog.open();
-            // ÊôĞÔ°´Å¥¼àÌı
+            // å±æ€§æŒ‰é’®ç›‘å¬
         } else if (text.equals(UIToolBar.PERFERENCE_NAEM)
                 || text.equals(UICharacter.PERFERENCE)) {
             PerferenceDialog perferenceDialog = new PerferenceDialog(shell);

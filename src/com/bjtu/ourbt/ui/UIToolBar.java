@@ -11,21 +11,21 @@ import com.bjtu.ourbt.util.ImageLoader;
 import com.bjtu.ourbt.util.NullImageException;
 
 /**
- * ÊµÏÖ¹¤¾ßÀ¸
+ * å®ç°å·¥å…·æ 
  */
 public class UIToolBar {
     ToolBar toolBar;
     SashForm sashForm;
-    public static String ADD_TORRENT_NAEM = "Ìí¼Ó Torrent";
-    public static String ADD_TORRENT_URL_NAEM = "´Ó URLÌí¼ÓÖÖ×Ó";
-    public static String CREATE_TORRENT_NAEM = "´´½¨ĞÂµÄTorrent";
-    public static String REMOVE_NAEM = "ÒÆ³ı";
-    public static String START_NAEM = "¿ªÊ¼";
-    public static String PAUSE_NAEM = "ÔİÍ£";
-    public static String STOP_NAEM = "Í£Ö¹";
-    public static String MOVE_UP__NAEM = "ÏòÉÏÒÆ¶¯";
-    public static String MOVE_DOWN__NAEM = "ÏòÏÂÒÆ¶¯";
-    public static String PERFERENCE_NAEM = "ÊôĞÔ";
+    public static String ADD_TORRENT_NAEM = "æ·»åŠ  Torrent";
+    public static String ADD_TORRENT_URL_NAEM = "ä» URLæ·»åŠ ç§å­";
+    public static String CREATE_TORRENT_NAEM = "åˆ›å»ºæ–°çš„Torrent";
+    public static String REMOVE_NAEM = "ç§»é™¤";
+    public static String START_NAEM = "å¼€å§‹";
+    public static String PAUSE_NAEM = "æš‚åœ";
+    public static String STOP_NAEM = "åœæ­¢";
+    public static String MOVE_UP__NAEM = "å‘ä¸Šç§»åŠ¨";
+    public static String MOVE_DOWN__NAEM = "å‘ä¸‹ç§»åŠ¨";
+    public static String PERFERENCE_NAEM = "å±æ€§";
 
     public static String LISTENER_OBJECT_NAME = "ToolItem";
 
@@ -162,7 +162,7 @@ public class UIToolBar {
     }
 
     /**
-     * ÄÚ²¿·½·¨£¬²úÉú·Ö¸î
+     * å†…éƒ¨æ–¹æ³•ï¼Œäº§ç”Ÿåˆ†å‰²
      */
     private void createSeparator() {
         ToolItem separator = new ToolItem(toolBar, SWT.SEPARATOR);

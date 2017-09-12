@@ -8,7 +8,7 @@ import org.eclipse.swt.widgets.MenuItem;
 import org.eclipse.swt.widgets.Shell;
 
 /**
- * 菜单
+ * 鑿滃崟
  */
 public class UIMenu {
     private Shell shell;
@@ -32,15 +32,15 @@ public class UIMenu {
         Menu mainMenu = new Menu(shell, SWT.BAR);
         shell.setMenuBar(mainMenu);
         fileItem = new MenuItem(mainMenu, SWT.CASCADE);
-        fileItem.setText("文件(&F)");
+        fileItem.setText("鏂囦欢(&F)");
         optionItem = new MenuItem(mainMenu, SWT.CASCADE);
-        optionItem.setText("选项(&O)");
+        optionItem.setText("閫夐」(&O)");
         helpItem = new MenuItem(mainMenu, SWT.CASCADE);
-        helpItem.setText("帮助(&H)");
+        helpItem.setText("甯姪(&H)");
     }
 
     /**
-     * 下拉菜单
+     * 涓嬫媺鑿滃崟
      */
     private void createDropMenu() {
         Menu fileMenu = new Menu(shell, SWT.DROP_DOWN);

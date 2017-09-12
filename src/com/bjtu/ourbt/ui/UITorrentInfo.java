@@ -12,7 +12,7 @@ import com.bjtu.ourbt.util.ImageLoader;
 import com.bjtu.ourbt.util.NullImageException;
 
 /**
- * ÏÔÊ¾ÏÂÔØÊ±µÄÊµÊ±ĞÅÏ¢£¬Ö»ÓĞ½çÃæ¹¦ÄÜÓĞ´ıÍêÉÆ
+ * æ˜¾ç¤ºä¸‹è½½æ—¶çš„å®æ—¶ä¿¡æ¯ï¼Œåªæœ‰ç•Œé¢åŠŸèƒ½æœ‰å¾…å®Œå–„
  */
 public class UITorrentInfo {
     private SashForm sashForm;
@@ -29,8 +29,8 @@ public class UITorrentInfo {
         TabFolder tabFolder = new TabFolder(sashForm, SWT.NONE);
 
         TabItem generalItem = new TabItem(tabFolder, SWT.BORDER | SWT.CLOSE);
-        generalItem.setText("³£¹æ");
-        generalItem.setToolTipText("ÏÔÊ¾³£¹æĞÅÏ¢");
+        generalItem.setText("å¸¸è§„");
+        generalItem.setToolTipText("æ˜¾ç¤ºå¸¸è§„ä¿¡æ¯");
         try {
             generalItem.setImage(new Image(sashForm.getDisplay(), ImageLoader
                     .addImage("image/tab_00x00.bmp")));
@@ -39,8 +39,8 @@ public class UITorrentInfo {
         }
 
         TabItem trackerItem = new TabItem(tabFolder, SWT.BORDER | SWT.CLOSE);
-        trackerItem.setText("ËÅ·ş");
-        trackerItem.setToolTipText("ËÅ·ş");
+        trackerItem.setText("ä¼ºæœ");
+        trackerItem.setToolTipText("ä¼ºæœ");
         try {
             trackerItem.setImage(new Image(sashForm.getDisplay(), ImageLoader
                     .addImage("image/tab_00x01.bmp")));
@@ -54,8 +54,8 @@ public class UITorrentInfo {
         trackerItem.setControl(trackComposite);
 
         TabItem peerItem = new TabItem(tabFolder, SWT.BORDER | SWT.CLOSE);
-        peerItem.setText("ÓÃ»§");
-        peerItem.setToolTipText("ÏÔÊ¾ÓÃ»§ÏêÏ¸ĞÅÏ¢");
+        peerItem.setText("ç”¨æˆ·");
+        peerItem.setToolTipText("æ˜¾ç¤ºç”¨æˆ·è¯¦ç»†ä¿¡æ¯");
         try {
             peerItem.setImage(new Image(sashForm.getDisplay(), ImageLoader
                     .addImage("image/tab_00x02.bmp")));
@@ -70,8 +70,8 @@ public class UITorrentInfo {
         peerItem.setControl(peerComposite);
 
         TabItem pieceItem = new TabItem(tabFolder, SWT.BORDER | SWT.CLOSE);
-        pieceItem.setText("Çø¿é");
-        pieceItem.setToolTipText("ÏÔÊ¾Çø¿éĞÅÏ¢");
+        pieceItem.setText("åŒºå—");
+        pieceItem.setToolTipText("æ˜¾ç¤ºåŒºå—ä¿¡æ¯");
         try {
             pieceItem.setImage(new Image(sashForm.getDisplay(), ImageLoader
                     .addImage("image/tab_00x03.bmp")));
@@ -80,8 +80,8 @@ public class UITorrentInfo {
         }
 
         TabItem fileItem = new TabItem(tabFolder, SWT.BORDER | SWT.CLOSE);
-        fileItem.setText("ÎÄ¼ş");
-        fileItem.setToolTipText("ÏÔÊ¾ÎÄ¼ş");
+        fileItem.setText("æ–‡ä»¶");
+        fileItem.setToolTipText("æ˜¾ç¤ºæ–‡ä»¶");
         try {
             fileItem.setImage(new Image(sashForm.getDisplay(), ImageLoader
                     .addImage("image/tab_00x04.bmp")));
@@ -90,8 +90,8 @@ public class UITorrentInfo {
         }
 
         TabItem speedItem = new TabItem(tabFolder, SWT.BORDER | SWT.CLOSE);
-        speedItem.setText("ËÙ¶È");
-        speedItem.setToolTipText("ÏÔÊ¾ËÙ¶È");
+        speedItem.setText("é€Ÿåº¦");
+        speedItem.setToolTipText("æ˜¾ç¤ºé€Ÿåº¦");
 
         try {
             speedItem.setImage(new Image(sashForm.getDisplay(), ImageLoader
@@ -101,8 +101,8 @@ public class UITorrentInfo {
         }
 
         TabItem loggerItem = new TabItem(tabFolder, SWT.BORDER | SWT.CLOSE);
-        loggerItem.setText("ÈÕÖ¾");
-        loggerItem.setToolTipText("ÏÔÊ¾ÈÕÖ¾");
+        loggerItem.setText("æ—¥å¿—");
+        loggerItem.setToolTipText("æ˜¾ç¤ºæ—¥å¿—");
         try {
             loggerItem.setImage(new Image(sashForm.getDisplay(), ImageLoader
                     .addImage("image/tab_00x06.bmp")));

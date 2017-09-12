@@ -3,7 +3,7 @@ package com.bjtu.ourbt.util;
 import java.io.InputStream;
 
 /**
- * Õâ¸öÀàÓÃÀ´¼ÓÔØÍ¼Æ¬£¬ÒòÎªÂ·¾¶µÄÎÊÌâ£¬±ØĞèÒªÓÃÕâ¸öÀàµÄ·½·¨À´¼ÓÔØÍ¼Æ¬£¬²»È»·¢²¼³É¿ÉÔËĞĞµÄjarÊ±¾Í»á³ö´í£¬ÕÒ²»µ½Í¼Æ¬
+ * è¿™ä¸ªç±»ç”¨æ¥åŠ è½½å›¾ç‰‡ï¼Œå› ä¸ºè·¯å¾„çš„é—®é¢˜ï¼Œå¿…éœ€è¦ç”¨è¿™ä¸ªç±»çš„æ–¹æ³•æ¥åŠ è½½å›¾ç‰‡ï¼Œä¸ç„¶å‘å¸ƒæˆå¯è¿è¡Œçš„jaræ—¶å°±ä¼šå‡ºé”™ï¼Œæ‰¾ä¸åˆ°å›¾ç‰‡
  */
 public class ImageLoader {
 
@@ -13,7 +13,7 @@ public class ImageLoader {
         if (in != null) {
             return in;
         } else {
-            throw new NullImageException("Í¼Æ¬Â·¾¶²»¶Ô");
+            throw new NullImageException("å›¾ç‰‡è·¯å¾„ä¸å¯¹");
         }
     }
 

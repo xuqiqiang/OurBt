@@ -13,7 +13,7 @@ import com.bjtu.ourbt.util.ImageLoader;
 import com.bjtu.ourbt.util.NullImageException;
 
 /**
- * Ö÷Àà£¬ÆäËüÀà¶¼ÊÇÔÚÕâ´´½¨µÄ
+ * ä¸»ç±»ï¼Œå…¶å®ƒç±»éƒ½æ˜¯åœ¨è¿™åˆ›å»ºçš„
  */
 public class OurBt {
     private Shell shell;
@@ -35,34 +35,34 @@ public class OurBt {
         }
         shell.setLayout(new FillLayout());
 
-        // ´´½¨ÏµÍ³ÍĞÅÌ
+        // åˆ›å»ºç³»ç»Ÿæ‰˜ç›˜
         UITray uiTray = new UITray(shell);
         uiTray.open();
 
-        // ´´½¨²Ëµ¥Ä¿Â¼
+        // åˆ›å»ºèœå•ç›®å½•
         UIMenu uiMenu = new UIMenu(shell);
         uiMenu.open();
 
         SashForm sashForm = new SashForm(shell, SWT.VERTICAL | SWT.NONE);
 
-        // ´´½¨¹¤¾ßÀ¸
+        // åˆ›å»ºå·¥å…·æ 
         UIToolBar uiToolBar = new UIToolBar(sashForm);
         uiToolBar.open();
 
         SashForm childSashForm = new SashForm(sashForm, SWT.VERTICAL);
         SashForm childchildSashForm = new SashForm(childSashForm, SWT.NONE);
 
-        // ´´½¨×´Ì¬À¸
+        // åˆ›å»ºçŠ¶æ€æ 
         StatusBar statusBar = new StatusBar(childSashForm);
         statusBar.open();
         sashForm.setWeights(new int[] { 5, 100 });
         sashForm.setLayout(new FillLayout());
 
-        // ´´½¨×ó²àÄ¿Â¼Ê÷
+        // åˆ›å»ºå·¦ä¾§ç›®å½•æ ‘
         UICategory uiCategory = new UICategory(childchildSashForm);
         uiCategory.open();
 
-        // ´´½¨±í¸ñ
+        // åˆ›å»ºè¡¨æ ¼
         uiTorrentTable = new UITorrentTable(childchildSashForm);
         childSashForm.setWeights(new int[] { 110, 4 });
         childSashForm.setLayout(new FillLayout());
@@ -88,7 +88,7 @@ public class OurBt {
     }
 
     /**
-     * @return ·µ»Ø±í¸ñ¶ÔÏó
+     * @return è¿”å›è¡¨æ ¼å¯¹è±¡
      */
     public static UITorrentTable getUITorrentTable() {
         return uiTorrentTable;

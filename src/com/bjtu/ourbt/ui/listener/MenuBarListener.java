@@ -11,7 +11,7 @@ import com.bjtu.ourbt.ui.AboutDialog;
 import com.bjtu.ourbt.util.UICharacter;
 
 /**
- * ²Ëµ¥¼àÌıÆ÷£¬¼Ì³ĞBaseListener
+ * èœå•ç›‘å¬å™¨ï¼Œç»§æ‰¿BaseListener
  */
 public class MenuBarListener extends BaseListener {
 
@@ -27,44 +27,44 @@ public class MenuBarListener extends BaseListener {
 
     private void addSelfListener(SelectionEvent e) {
 
-        // ´Ó·ÇÄ¬ÈÏÂ·¾¶Ìí¼ÓÖÖ×Ó
+        // ä»éé»˜è®¤è·¯å¾„æ·»åŠ ç§å­
         if (((MenuItem) e.getSource()).getText().equals(
                 UICharacter.ADD_TORRENT_NOT_DEFAULT)) {
 
         }
 
-        // ÏµÍ³ÍË³ö
+        // ç³»ç»Ÿé€€å‡º
         if (((MenuItem) e.getSource()).getText().equals(UICharacter.EXIT)) {
             shell.getDisplay().getSystemTray().getItems()[0].dispose();
             AzureusCoreFactory.getSingleton().stop();
             System.exit(0);
         }
 
-        // ÊÇ·ñÏÔÊ¾¹¤¾ßÀ¸
+        // æ˜¯å¦æ˜¾ç¤ºå·¥å…·æ 
         if (((MenuItem) e.getSource()).getText().equals(
                 UICharacter.SHOW_TOOL_BAR)) {
             System.out.println("ok");
         }
 
-        // ÏÔÊ¾ÖÖ×ÓĞÅÏ¢
+        // æ˜¾ç¤ºç§å­ä¿¡æ¯
         if (((MenuItem) e.getSource()).getText().equals(
                 UICharacter.SHOW_DETAIL_INFO)) {
             System.out.println("ok");
         }
 
-        // ÏÔÊ¾¹¤¾ßÀ¸
+        // æ˜¾ç¤ºå·¥å…·æ 
         if (((MenuItem) e.getSource()).getText().equals(
                 UICharacter.SHOW_STATUS_BAR)) {
             System.out.println("ok");
         }
 
-        // ÏÔÊ¾²à±ßÀ¸µÄÖù×´½á¹¹
+        // æ˜¾ç¤ºä¾§è¾¹æ çš„æŸ±çŠ¶ç»“æ„
         if (((MenuItem) e.getSource()).getText().equals(
                 UICharacter.SHOW_CATEGORY_LIST)) {
             System.out.println("ok");
         }
 
-        // °ïÖúÎÄµµ
+        // å¸®åŠ©æ–‡æ¡£
         if (((MenuItem) e.getSource()).getText().equals(UICharacter.HELP)) {
             try {
                 Runtime.getRuntime()
@@ -74,7 +74,7 @@ public class MenuBarListener extends BaseListener {
             }
         }
 
-        // ¹ØÓÚ
+        // å…³äº
         if (((MenuItem) e.getSource()).getText().equals(UICharacter.ABOUT)) {
             AboutDialog aboutDialog = new AboutDialog(shell);
             aboutDialog.open();

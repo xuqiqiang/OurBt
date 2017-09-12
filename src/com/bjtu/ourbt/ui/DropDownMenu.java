@@ -13,7 +13,7 @@ import org.gudy.azureus2.ui.swt.views.utils.ManagerUtils;
 import com.bjtu.ourbt.ui.UITorrentTable.ShowTableItem;
 
 /**
- * ±íÑ¡ÏîTableItemµÄÏÂÀ­²Ëµ¥
+ * è¡¨é€‰é¡¹TableItemçš„ä¸‹æ‹‰èœå•
  */
 public class DropDownMenu {
     private Shell shell;
@@ -41,7 +41,7 @@ public class DropDownMenu {
         menu = new Menu(shell, SWT.POP_UP);
 
         beginItem = new MenuItem(menu, SWT.PUSH);
-        beginItem.setText("¿ªÊ¼");
+        beginItem.setText("å¼€å§‹");
         beginItem.addSelectionListener(new SelectionAdapter() {
             public void widgetSelected(SelectionEvent e) {
                 manager = (DownloadManager) table.getSelection()[0]
@@ -51,7 +51,7 @@ public class DropDownMenu {
         });
 
         beginAllItem = new MenuItem(menu, SWT.PUSH);
-        beginAllItem.setText("¿ªÊ¼ËùÓĞ");
+        beginAllItem.setText("å¼€å§‹æ‰€æœ‰");
         beginAllItem.addSelectionListener(new SelectionAdapter() {
             public void widgetSelected(SelectionEvent e) {
                 ManagerUtils.asyncStartAll();
@@ -59,7 +59,7 @@ public class DropDownMenu {
         });
 
         stopItem = new MenuItem(menu, SWT.PUSH);
-        stopItem.setText("Í£Ö¹");
+        stopItem.setText("åœæ­¢");
         stopItem.addSelectionListener(new SelectionAdapter() {
             @Override
             public void widgetSelected(SelectionEvent e) {
@@ -71,7 +71,7 @@ public class DropDownMenu {
         });
 
         stopAllItem = new MenuItem(menu, SWT.PUSH);
-        stopAllItem.setText("Í£Ö¹ËùÓĞ");
+        stopAllItem.setText("åœæ­¢æ‰€æœ‰");
         stopAllItem.addSelectionListener(new SelectionAdapter() {
             @Override
             public void widgetSelected(SelectionEvent e) {
@@ -80,7 +80,7 @@ public class DropDownMenu {
         });
 
         pauseItem = new MenuItem(menu, SWT.PUSH);
-        pauseItem.setText("ÔİÍ£");
+        pauseItem.setText("æš‚åœ");
         pauseItem.addSelectionListener(new SelectionAdapter() {
             @Override
             public void widgetSelected(SelectionEvent e) {
@@ -89,7 +89,7 @@ public class DropDownMenu {
         });
 
         resumeItem = new MenuItem(menu, SWT.PUSH);
-        resumeItem.setText("»Ö¸´");
+        resumeItem.setText("æ¢å¤");
         resumeItem.addSelectionListener(new SelectionAdapter() {
             @Override
             public void widgetSelected(SelectionEvent e) {
@@ -98,12 +98,12 @@ public class DropDownMenu {
         });
 
         removeItem = new MenuItem(menu, SWT.CASCADE);
-        removeItem.setText("É¾³ı");
+        removeItem.setText("åˆ é™¤");
 
         removeMenu = new Menu(shell, SWT.DROP_DOWN);
 
         removeTorrentItem = new MenuItem(removeMenu, SWT.PUSH);
-        removeTorrentItem.setText("É¾³ıÖÖ×Ó");
+        removeTorrentItem.setText("åˆ é™¤ç§å­");
         removeTorrentItem.addSelectionListener(new SelectionAdapter() {
             @Override
             public void widgetSelected(SelectionEvent e) {
@@ -122,7 +122,7 @@ public class DropDownMenu {
         });
 
         removeAllItem = new MenuItem(removeMenu, SWT.PUSH);
-        removeAllItem.setText("É¾³ıÖÖ×ÓºÍÎÄ¼ş");
+        removeAllItem.setText("åˆ é™¤ç§å­å’Œæ–‡ä»¶");
         removeAllItem.addSelectionListener(new SelectionAdapter() {
             @Override
             public void widgetSelected(SelectionEvent e) {

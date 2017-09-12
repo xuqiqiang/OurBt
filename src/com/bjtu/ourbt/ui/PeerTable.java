@@ -6,7 +6,7 @@ import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;
 
 /**
- * ½ÚµãĞÅÏ¢±í
+ * èŠ‚ç‚¹ä¿¡æ¯è¡¨
  */
 public class PeerTable {
     private Composite composite;

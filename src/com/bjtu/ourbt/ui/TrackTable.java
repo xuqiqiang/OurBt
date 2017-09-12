@@ -6,7 +6,7 @@ import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;
 
 /**
- * trackerĞÅÏ¢ÏÔÊ¾±í
+ * trackerä¿¡æ¯æ˜¾ç¤ºè¡¨
  */
 public class TrackTable {
     private Composite composite;

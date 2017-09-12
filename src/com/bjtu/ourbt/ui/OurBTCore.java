@@ -5,7 +5,7 @@ import com.aelitis.azureus.core.AzureusCoreException;
 import com.aelitis.azureus.core.impl.AzureusCoreImpl;
 
 /**
- * ÒıÇæ£¬´ÓºóÌ¨»ñÈ¡¸ø½çÃæµ÷ÓÃ£¬ÊÇºóÌ¨ºÍ½çÃæµÄ½Ó¿Ú
+ * å¼•æ“ï¼Œä»åå°è·å–ç»™ç•Œé¢è°ƒç”¨ï¼Œæ˜¯åå°å’Œç•Œé¢çš„æ¥å£
  */
 public class OurBTCore {
     private static AzureusCore core;
